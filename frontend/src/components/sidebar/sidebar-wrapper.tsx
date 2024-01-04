@@ -137,8 +137,6 @@ export const SidebarWrapper: React.FC<SidebarWrapperProps> = ({ children }: Side
         return pageType === type ? '#AFF1F5' : 'white';
     }
 
-    console.log("Selected Wallet = ", selectedWallet);
-
     return (
         <div className='flex flex-row h-screen bg-zinc-900 border-[16px] border-zinc-900 space-x-6'>
             <div className='flex flex-col w-[227px]'>
