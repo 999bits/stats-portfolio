@@ -50,7 +50,7 @@ export const TokenAllocation: React.FC<TokenAllocationProps> = ({ tokenAssets }:
                             <TokenAssetItem asset={asset} key={index} />
                         ))
                     ) : (
-                        <></>
+                        <div></div>
                     )}
                 </div>
             </div>
