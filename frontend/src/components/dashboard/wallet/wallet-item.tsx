@@ -31,7 +31,7 @@ export const WalletItem: React.FC<WalletItemProps> = ({ wallet, index }: WalletI
                 {wallet.tokens.length > 4 ? <span className='text-neutral-400 text-sm font-bold ml-2'>+{wallet.tokens.length - 4}</span> : <></>}
             </div>
             <div className="w-[115px]">
-                <WalletChart data={wallet.data} increaseColor="#3DBAA2" decreaseColor="#FF7A68" index={index}></WalletChart>
+                <WalletChart data={wallet.data} increaseColor="#3DBAA2" decreaseColor="#FF7A68" curveOnly={false} index={index}></WalletChart>
             </div>
         </div>
     )
