@@ -6,9 +6,10 @@ import WalletChart from "./wallet-chart"
 
 interface WalletItemProps {
     wallet: Wallet
+    index: number;
 }
 
-export const WalletItem: React.FC<WalletItemProps> = ({ wallet }: WalletItemProps) => {
+export const WalletItem: React.FC<WalletItemProps> = ({ wallet, index }: WalletItemProps) => {
 
     return (
         <div className='flex flex-row p-[12px] items-center space-x-8 bg-neutral-900 border-[1px] border-zinc-800 rounded-md'>
@@ -30,7 +31,7 @@ export const WalletItem: React.FC<WalletItemProps> = ({ wallet }: WalletItemProp
                 {wallet.tokens.length > 4 ? <span className='text-neutral-400 text-sm font-bold ml-2'>+{wallet.tokens.length - 4}</span> : <></>}
             </div>
             <div className="w-[115px]">
-                <WalletChart wallet={wallet}></WalletChart>
+                <WalletChart data={wallet.data} increaseColor="#3DBAA2" decreaseColor="#FF7A68" index={index}></WalletChart>
             </div>
         </div>
     )

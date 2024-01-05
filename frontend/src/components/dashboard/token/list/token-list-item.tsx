@@ -9,7 +9,7 @@ interface TokenListItemProps {
 
 export const TokenListItem: React.FC<TokenListItemProps> = ({ asset }: TokenListItemProps) => {
     return (
-        <div className='flex flex-row w-full h-full p-4 items-center space-x-3'>
+        <div className='flex flex-row w-full h-full p-4 items-center space-x-3 hover:bg-zinc-800'>
             <Avatar className='w-[40px] h-[40px]'>
                 <AvatarImage className='w-[40px] h-[40px]' src={asset.avatar} alt={asset.name} />
                 <AvatarFallback className="bg-zinc-700"></AvatarFallback>

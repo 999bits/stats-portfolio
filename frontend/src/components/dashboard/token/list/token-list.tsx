@@ -13,7 +13,7 @@ export const TokenList: React.FC<TokenListProps> = ({ tokenAssets }: TokenListPr
     return (
         <div className='flex flex-col w-full h-full bg-neutral-900 border-[1px] border-zinc-800 rounded-md space-y-6'>
             <span className='pt-4 pl-4 text-base text-neutral-300'>Tokens</span>
-            <ScrollArea className='w-full h-full rounded-md'>
+            <ScrollArea className='w-full h-full'>
                 <div>
                     {
                         tokenAssets.map((asset: TokenAsset, index) => (

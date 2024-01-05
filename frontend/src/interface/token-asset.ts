@@ -8,5 +8,6 @@ export interface TokenAsset {
     wallets: Array<Wallet>;
     value: number;
     usd_value: number;
+    color: string;
 }
 

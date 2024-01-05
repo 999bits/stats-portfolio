@@ -9,7 +9,7 @@ interface TokenAssetItemProps {
 export const TokenAssetItem: React.FC<TokenAssetItemProps> = ({ asset }: TokenAssetItemProps) => {
     return (
         <div className='flex flex-row w-full items-center space-x-2 text-sm'>
-            <div className="w-4 h-4 rounded-sm bg-cyan-500"></div>
+            <div className="w-4 h-4 rounded-sm" style={{ backgroundColor: asset.color }}></div>
             <span>{asset.name} ~ {asset.percent}%</span>
         </div>
     )
