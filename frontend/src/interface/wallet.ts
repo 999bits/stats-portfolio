@@ -5,4 +5,5 @@ export interface Wallet {
     address: string;
     value: number;
     tokens: Array<Token>;
+    data: any;
 }

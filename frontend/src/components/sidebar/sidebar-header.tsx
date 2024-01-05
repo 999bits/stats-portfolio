@@ -2,7 +2,6 @@
 import Image from "next/image";
 
 export const SidebarHeader: React.FC = () => {
-    console.log("Called here");
     return (
         <div className='flex mt-4 space-x-4 items-center justify-center'>
             <Image width={40} height={40} src={"/images/logo.svg"} alt="logo" />
