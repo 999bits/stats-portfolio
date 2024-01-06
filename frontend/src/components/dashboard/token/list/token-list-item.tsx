@@ -1,6 +1,6 @@
 "use client"
 
-import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { TokenAsset } from "@/interface/token-asset";
 
 interface TokenListItemProps {
