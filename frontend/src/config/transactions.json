@@ -1,0 +1,50 @@
+[
+    {
+        "name": "USDT",
+        "address": "0x017e9db34fc69af0dc7c7b4b33511226971cddc7",
+        "amount": 3600,
+        "usd_value": 3600,
+        "created": "10th Nov 2023",
+        "type": 0
+    },
+    {
+        "name": "USDT",
+        "address": "0x017e9db34fc69af0dc7c7b4b33511226971cddc7",
+        "amount": 2800,
+        "usd_value": 2800,
+        "created": "10th Nov 2023",
+        "type": 0
+    },
+    {
+        "name": "USDT",
+        "address": "0x017e9db34fc69af0dc7c7b4b33511226971cddc7",
+        "amount": 530,
+        "usd_value": 530,
+        "created": "10th Nov 2023",
+        "type": 1
+    },
+    {
+        "name": "ETH",
+        "address": "0x017e9db34fc69af0dc7c7b4b33511226971cddc7",
+        "amount": 1.2,
+        "usd_value": 2700,
+        "created": "10th Nov 2023",
+        "type": 0
+    },
+    {
+        "name": "ETH",
+        "address": "0x017e9db34fc69af0dc7c7b4b33511226971cddc7",
+        "amount": 2.3,
+        "usd_value": 5175,
+        "created": "10th Nov 2023",
+        "type": 1
+    },
+    {
+        "name": "ETH",
+        "address": "0x017e9db34fc69af0dc7c7b4b33511226971cddc7",
+        "amount": 0.5,
+        "usd_value": 1125,
+        "created": "10th Nov 2023",
+        "type": 0
+    }
+]

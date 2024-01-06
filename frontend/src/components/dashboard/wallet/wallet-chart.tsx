@@ -23,7 +23,8 @@ export const WalletChart: React.FC<WalletChartProps> = ({ data, increaseColor, d
                 setChartColor(decreaseColor);
             }
         }
-    }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [data]);
 
     return (
         <>

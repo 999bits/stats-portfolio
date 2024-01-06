@@ -6,12 +6,12 @@ import { PortfolioChart } from "@/components/dashboard";
 import TokenAllocation from "@/components/dashboard/token/allocation/token-allocation";
 import WalletBoard from "@/components/dashboard/wallet/wallet-board";
 import TokenList from "@/components/dashboard/token/list/token-list";
-import tokens from "../../config/tokens.json";
-import portfolios from "../../config/portfolio.json";
+import NftBoard from "@/components/dashboard/nft-transaction/nft-transaction-board";
+import { dummy_tokens, dummy_portfolios } from "@/config";
 
 export default function Dashboard() {
 
-    const [tokenAssets, setTokenAssets] = useState<any>(tokens);
+    const [tokenAssets, setTokenAssets] = useState<any>(dummy_tokens);
 
     return (
         <ScrollArea className="flex w-full h-full overflow-y-auto pl-4 pt-4 pb-4">
@@ -22,7 +22,7 @@ export default function Dashboard() {
                             <PortfolioStats />
                         </div>
                         <div className='w-[436px] h-[200px]'>
-                            <PortfolioChart data={portfolios} width={436} height={144} />
+                            <PortfolioChart data={dummy_portfolios} width={436} height={144} />
                         </div>
                     </div>
                     <WalletBoard />
@@ -34,6 +34,7 @@ export default function Dashboard() {
                             <TokenList tokenAssets={tokenAssets}></TokenList>
                         </div>
                     </div>
+                    <NftBoard></NftBoard>
                 </div>
             </div>
         </ScrollArea>

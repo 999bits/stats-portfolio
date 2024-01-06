@@ -33,7 +33,8 @@ export const TokenAllocation: React.FC<TokenAllocationProps> = ({ tokenAssets }:
 
     useEffect(() => {
         handleMakeChartData();
-    }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [tokenAssets]);
 
     return (
         <div className='flex flex-col w-full h-full bg-neutral-900 border-[1px] border-zinc-800 rounded-md p-4 space-y-6'>
