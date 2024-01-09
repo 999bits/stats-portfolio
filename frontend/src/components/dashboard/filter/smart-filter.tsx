@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { PopOverComboBox } from "@/components/ui/popover-combo-box";
 import { PopOverDatePickerWithRange } from "@/components/ui/popover-datepicker";
 import { PopOverPriceRange } from "./popover-pricerange";
-import { addDays } from "date-fns"
+import { addDays, subDays } from "date-fns"
 
 interface SmartFilterProps {
 
@@ -117,8 +117,8 @@ export const SmartFilter: React.FC<SmartFilterProps> = () => {
                     popover_style='w-[315px] p-0'></PopOverComboBox>
                 <PopOverPriceRange />
                 <PopOverDatePickerWithRange
-                    from={from}
-                    to={addDays(from, 10)}
+                    from={subDays(from, 7)}
+                    to={from}
                     title='From ~ To'
                     buttonStyle='w-full h-[44px] justify-start text-left font-normal border-[1px] border-zinc-800 text-neutral-100'
                     dateFormat='LLL dd, y'></PopOverDatePickerWithRange>
