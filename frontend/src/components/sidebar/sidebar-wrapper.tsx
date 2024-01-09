@@ -7,6 +7,7 @@ import { PageType } from '@/config/constants';
 import SidebarHeader from './sidebar-header';
 import { SvgDashboard, SvgWallet, SvgSetting, SvgSwap, SvgTransact } from './icons';
 import { Wallet } from '@/interface';
+import initWallets from '../../config/wallets.json'
 
 interface SidebarWrapperProps {
     children: React.ReactNode;
@@ -14,18 +15,7 @@ interface SidebarWrapperProps {
 
 export const SidebarWrapper: React.FC<SidebarWrapperProps> = ({ children }: SidebarWrapperProps) => {
 
-    const DUMMY_WALLETS = [
-        {
-            name: 'Wallet 01',
-            address: '0xEE86283a2DFCc1f52E86790e275e5b07b44A50E5',
-        },
-        {
-            name: 'Wallet 02',
-            address: '0xFF86283a2DFCc1f52E86790e275e5b07b44A50E5'
-        }
-    ];
-
-    const [wallets, setWallets] = useState<any>(DUMMY_WALLETS);
+    const [wallets, setWallets] = useState<any>(initWallets);
     const [pageType, setPageType] = useState<PageType>(PageType.DASHBOARD);
     const [selectedWallet, setSelectedWallet] = useState<string | null>('');
     const router = useRouter();
@@ -71,8 +61,6 @@ export const SidebarWrapper: React.FC<SidebarWrapperProps> = ({ children }: Side
     const getMenuItemSelectedColor = (type: PageType) => {
         return pageType === type ? '#AFF1F5' : 'white';
     }
-
-    console.log("Selected Wallet = ", selectedWallet);
 
     return (
         <div className='flex flex-row h-screen bg-zinc-900 border-[16px] border-zinc-900 space-x-6'>
@@ -136,7 +124,7 @@ export const SidebarWrapper: React.FC<SidebarWrapperProps> = ({ children }: Side
                     </Menu>
                 </Sidebar>
             </div>
-            <div className='w-full bg-black rounded-lg rounded-tl-[40px] p-4'>
+            <div className='w-full bg-black rounded-lg rounded-tl-[40px]'>
                 {children}
             </div>
         </div>

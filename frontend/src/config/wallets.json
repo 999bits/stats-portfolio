@@ -1,0 +1,165 @@
+[
+    {
+        "name": "Wallet 01",
+        "address": "0xEE86283a2DFCc1f52E86790e275e5b07b44A50E5",
+        "value": "52,437.00",
+        "data": [
+            {
+                "name": "Page 1",
+                "amt": 4000
+            },
+            {
+                "name": "Page B",
+                "amt": 3000
+            },
+            {
+                "name": "Page C",
+                "amt": 2000
+            },
+            {
+                "name": "Page D",
+                "amt": 2780
+            },
+            {
+                "name": "Page E",
+                "amt": 1890
+            },
+            {
+                "name": "Page F",
+                "amt": 2390
+            },
+            {
+                "name": "Page G",
+                "amt": 3490
+            }
+        ],
+        "tokens": [
+            {
+                "name": "USDC",
+                "avatar": "/images/dashboard/tokens/usdc.svg"
+            },
+            {
+                "name": "Ethereum",
+                "avatar": "/images/dashboard/tokens/ethereum.svg"
+            },
+            {
+                "name": "1inch",
+                "avatar": "/images/dashboard/tokens/1inch.svg"
+            },
+            {
+                "name": "USDT",
+                "avatar": "/images/dashboard/tokens/usdt.svg"
+            },
+            {
+                "name": "Shiba",
+                "avatar": "/images/dashboard/tokens/shiba.svg"
+            }
+        ]
+    },
+    {
+        "name": "Wallet 02",
+        "address": "0xFF86283a2DFCc1f52E86790e275e5b07b44A50E5",
+        "value": "125,849.01",
+        "tokens": [
+            {
+                "name": "USDT",
+                "avatar": "/images/dashboard/tokens/usdc.svg"
+            },
+            {
+                "name": "Ethereum",
+                "avatar": "/images/dashboard/tokens/ethereum.svg"
+            },
+            {
+                "name": "Shiba",
+                "avatar": "/images/dashboard/tokens/shiba.svg"
+            },
+            {
+                "name": "1inch",
+                "avatar": "/images/dashboard/tokens/1inch.svg"
+            }
+        ],
+        "data": [
+            {
+                "name": "Page 2",
+                "amt": 4000
+            },
+            {
+                "name": "Page B",
+                "amt": 3500
+            },
+            {
+                "name": "Page C",
+                "amt": 2000
+            },
+            {
+                "name": "Page D",
+                "amt": 2290
+            },
+            {
+                "name": "Page E",
+                "amt": 6000
+            },
+            {
+                "name": "Page F",
+                "amt": 2390
+            },
+            {
+                "name": "Page G",
+                "amt": 9000
+            }
+        ]
+    },
+    {
+        "name": "Wallet 03",
+        "address": "0xFF86283a2DFCc1f52E86790e275e5b07b55A50E5",
+        "value": "238,534.01",
+        "tokens": [
+            {
+                "name": "USDT",
+                "avatar": "/images/dashboard/tokens/usdc.svg"
+            },
+            {
+                "name": "Ethereum",
+                "avatar": "/images/dashboard/tokens/ethereum.svg"
+            },
+            {
+                "name": "Shiba",
+                "avatar": "/images/dashboard/tokens/shiba.svg"
+            },
+            {
+                "name": "1inch",
+                "avatar": "/images/dashboard/tokens/1inch.svg"
+            }
+        ],
+        "data": [
+            {
+                "name": "Page 3",
+                "amt": 2400
+            },
+            {
+                "name": "Page B",
+                "amt": 2210
+            },
+            {
+                "name": "Page C",
+                "amt": 2290
+            },
+            {
+                "name": "Page D",
+                "amt": 2000
+            },
+            {
+                "name": "Page E",
+                "amt": 2181
+            },
+            {
+                "name": "Page F",
+                "amt": 2500
+            },
+            {
+                "name": "Page G",
+                "amt": 2100
+            }
+        ]
+    }
+]
