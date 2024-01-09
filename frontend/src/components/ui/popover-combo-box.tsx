@@ -44,7 +44,7 @@ export const PopOverComboBox: React.FC<PopOverComboBoxProps> = ({ datas, title, 
                     aria-expanded={open}
                     className={button_style}
                 >
-                    <div className='flex flex-row space-x-2'>
+                    <div className='flex flex-row space-x-2 items-center'>
                         {value && foundData.icon
                             ?
                             <Avatar className='w-[20px] h-[20px]'>
@@ -52,7 +52,7 @@ export const PopOverComboBox: React.FC<PopOverComboBoxProps> = ({ datas, title, 
                                 <AvatarFallback className="bg-zinc-700"></AvatarFallback>
                             </Avatar>
                             : <></>}
-                        <span>
+                        <span className='text-sm'>
                             {value
                                 ? foundData?.label
                                 : title}
@@ -73,7 +73,7 @@ export const PopOverComboBox: React.FC<PopOverComboBoxProps> = ({ datas, title, 
                     <CommandGroup className="bg-zinc-800">
                         {datas.map((data: any) => (
                             <CommandItem
-                                className='!bg-zinc-800 hover:!bg-zinc-700 h-[44px]'
+                                className='!bg-zinc-800 hover:!bg-cyan-300/10 h-[44px] hover:!text-cyan-200'
                                 key={data.value}
                                 value={data.value}
                                 onSelect={(currentValue) => {
@@ -92,7 +92,7 @@ export const PopOverComboBox: React.FC<PopOverComboBoxProps> = ({ datas, title, 
                                             <></>
                                         }
 
-                                        <span>{data.label}</span>
+                                        <span className='hover:text-cyan-300 text-sm'>{data.label}</span>
                                     </div>
 
                                     <Check

@@ -106,30 +106,30 @@ export const SmartFilter: React.FC<SmartFilterProps> = () => {
                     title='Token'
                     placeholder='Select Token'
                     datas={tokens}
-                    button_style='w-full h-[44px] justify-between border-[1px] border-zinc-800'
+                    button_style='w-full h-[44px] justify-between border-[1px] border-zinc-800 text-neutral-100'
                     popover_style='w-[315px] p-0'
                     need_search={true}></PopOverComboBox>
                 <PopOverComboBox
                     title='Network'
                     placeholder='Select Network'
                     datas={networks}
-                    button_style='w-full h-[44px] justify-between border-[1px] border-zinc-800'
+                    button_style='w-full h-[44px] justify-between border-[1px] border-zinc-800 text-neutral-100'
                     popover_style='w-[315px] p-0'></PopOverComboBox>
                 <PopOverPriceRange />
                 <PopOverDatePickerWithRange
                     from={from}
                     to={addDays(from, 10)}
                     title='From ~ To'
-                    buttonStyle='w-full h-[44px] justify-start text-left font-normal border-[1px] border-zinc-800'
+                    buttonStyle='w-full h-[44px] justify-start text-left font-normal border-[1px] border-zinc-800 text-neutral-100'
                     dateFormat='LLL dd, y'></PopOverDatePickerWithRange>
                 <PopOverComboBox
                     title='DAO'
                     placeholder='Select DAO'
                     datas={daos}
-                    button_style='w-full h-[44px] justify-between border-[1px] border-zinc-800'
+                    button_style='w-full h-[44px] justify-between border-[1px] border-zinc-800 text-neutral-100'
                     popover_style='w-[315px] p-0'></PopOverComboBox>
                 <DialogFooter>
-                    <Button className='w-full h-[44px] mt-4 mb-4 bg-zinc-800 hover:bg-zinc-700 text-neutral-400' type='submit' variant="secondary">Search</Button>
+                    <Button className='w-full h-[44px] mt-4 mb-4 bg-zinc-800 hover:bg-zinc-700 text-neutral-100' type='submit' variant="secondary">Search</Button>
                 </DialogFooter>
             </DialogContent>
         </Dialog>
