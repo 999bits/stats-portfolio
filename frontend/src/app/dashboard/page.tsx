@@ -8,15 +8,19 @@ import WalletBoard from "@/components/dashboard/wallet/wallet-board";
 import TokenList from "@/components/dashboard/token/list/token-list";
 import NftBoard from "@/components/dashboard/nft-transaction/nft-transaction-board";
 import { dummy_tokens, dummy_portfolios } from "@/config";
+import SmartFilter from "@/components/dashboard/filter/smart-filter";
 
 export default function Dashboard() {
 
     const [tokenAssets, setTokenAssets] = useState<any>(dummy_tokens);
 
     return (
-        <ScrollArea className="flex w-full h-full overflow-y-auto pl-4 pt-4 pb-4">
-            <div className='flex w-full h-full justify-center'>
+        <ScrollArea className="flex w-full h-full overflow-y-auto">
+            <div className='flex w-full h-full justify-center mt-6 mb-6'>
                 <div className='w-[900px] space-y-6'>
+                    <div className='flex flex-row justify-between'>
+                        <SmartFilter></SmartFilter>
+                    </div>
                     <div className='flex flex-row justify-between'>
                         <div className="w-[500px] h-[200px]">
                             <PortfolioStats />
